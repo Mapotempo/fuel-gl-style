@@ -1,0 +1,426 @@
+{
+  "version": 8,
+  "name": "Fuel",
+  "metadata": {
+    "mapbox:autocomposite": false,
+    "mapbox:type": "template",
+    "mapbox:groups": {
+      "b6371a3f2f5a9932464fa3867530a2e5": {
+        "name": "Transportation",
+        "collapsed": false
+      },
+      "a14c9607bc7954ba1df7205bf660433f": {
+        "name": "Boundaries"
+      },
+      "101da9f13b64a08fa4b6ac1168e89e5f": {
+        "name": "Places",
+        "collapsed": false
+      }
+    },
+    "openmaptiles:version": "3.x",
+    "openmaptiles:mapbox:owner": "openmaptiles",
+    "openmaptiles:mapbox:source:url": "mapbox://openmaptiles.4qljc88t"
+  },
+  "center": [
+    0,
+    44
+  ],
+  "zoom": 10,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "fuel": {
+      "url": "mbtiles://fuel.mbtiles",
+      "type": "vector"
+    }
+  },
+  "glyphs": "https://free.tilehosting.com/fonts/{fontstack}/{range}.pbf?key={key}",
+  "layers": [
+    {
+      "id": "station-halo",
+      "type": "circle",
+      "source": "fuel",
+      "source-layer": "station",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": [
+        "all"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "circle-color": "rgb(242,243,240)",
+        "circle-radius": {
+          "stops": [
+            [
+              1,
+              1.2
+            ],
+            [
+              22,
+              14.4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "station-default",
+      "type": "circle",
+      "source": "fuel",
+      "source-layer": "station",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "brand",
+          ""
+        ]
+      ],
+      "paint": {
+        "circle-color": "rgba(75, 72, 72, 1)",
+        "circle-radius": {
+          "stops": [
+            [
+              1,
+              1
+            ],
+            [
+              22,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "station-leclerc",
+      "type": "circle",
+      "source": "fuel",
+      "source-layer": "station",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "brand",
+          "leclerc"
+        ]
+      ],
+      "paint": {
+        "circle-color": "rgba(88, 17, 196, 1)",
+        "circle-radius": {
+          "stops": [
+            [
+              1,
+              1
+            ],
+            [
+              22,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "station-shell",
+      "type": "circle",
+      "source": "fuel",
+      "source-layer": "station",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "brand",
+          "shell"
+        ]
+      ],
+      "paint": {
+        "circle-color": "rgba(227, 213, 24, 1)",
+        "circle-radius": {
+          "stops": [
+            [
+              1,
+              1
+            ],
+            [
+              22,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "station-bp",
+      "type": "circle",
+      "source": "fuel",
+      "source-layer": "station",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "brand",
+          "bp"
+        ]
+      ],
+      "paint": {
+        "circle-color": "rgba(0, 167, 8, 1)",
+        "circle-radius": {
+          "stops": [
+            [
+              1,
+              1
+            ],
+            [
+              22,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "station-esso",
+      "type": "circle",
+      "source": "fuel",
+      "source-layer": "station",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "brand",
+          "esso"
+        ]
+      ],
+      "paint": {
+        "circle-color": "rgba(194, 135, 15, 1)",
+        "circle-radius": {
+          "stops": [
+            [
+              1,
+              1
+            ],
+            [
+              22,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "station-avia",
+      "type": "circle",
+      "source": "fuel",
+      "source-layer": "station",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "brand",
+          "avia"
+        ]
+      ],
+      "paint": {
+        "circle-color": "rgba(255, 85, 161, 1)",
+        "circle-radius": {
+          "stops": [
+            [
+              1,
+              1
+            ],
+            [
+              22,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "station-super_u",
+      "type": "circle",
+      "source": "fuel",
+      "source-layer": "station",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "brand",
+          "super u"
+        ]
+      ],
+      "paint": {
+        "circle-color": "rgba(0, 255, 146, 1)",
+        "circle-radius": {
+          "stops": [
+            [
+              1,
+              1
+            ],
+            [
+              22,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "station-carrefour",
+      "type": "circle",
+      "source": "fuel",
+      "source-layer": "station",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "brand",
+          "carrefour"
+        ]
+      ],
+      "paint": {
+        "circle-color": "rgba(0, 137, 255, 1)",
+        "circle-radius": {
+          "stops": [
+            [
+              1,
+              1
+            ],
+            [
+              22,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "station-intermarché",
+      "type": "circle",
+      "source": "fuel",
+      "source-layer": "station",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "brand",
+          "intermarché"
+        ]
+      ],
+      "paint": {
+        "circle-color": "rgba(16, 0, 255, 1)",
+        "circle-radius": {
+          "stops": [
+            [
+              1,
+              1
+            ],
+            [
+              22,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "station-total",
+      "type": "circle",
+      "source": "fuel",
+      "source-layer": "station",
+      "minzoom": 1,
+      "maxzoom": 24,
+      "filter": [
+        "all",
+        [
+          "==",
+          "brand",
+          "total"
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "circle-color": "rgba(255, 0, 0, 1)",
+        "circle-radius": {
+          "stops": [
+            [
+              1,
+              1
+            ],
+            [
+              22,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "station",
+      "type": "symbol",
+      "metadata": {
+        "mapbox:group": "101da9f13b64a08fa4b6ac1168e89e5f"
+      },
+      "source": "fuel",
+      "source-layer": "station",
+      "minzoom": 9,
+      "maxzoom": 24,
+      "filter": [
+        "none"
+      ],
+      "layout": {
+        "text-size": {
+          "stops": [
+            [
+              9,
+              9
+            ],
+            [
+              18,
+              20
+            ]
+          ]
+        },
+        "text-transform": "uppercase",
+        "text-justify": "left",
+        "visibility": "visible",
+        "text-offset": [
+          1,
+          0
+        ],
+        "text-anchor": "left",
+        "text-field": "{name}"
+      },
+      "paint": {
+        "text-color": "rgb(0, 0, 0)",
+        "text-halo-color": "rgb(242,243,240)",
+        "text-halo-width": 2,
+        "text-halo-blur": 0
+      }
+    }
+  ],
+  "id": "fuel"
+}
