@@ -37,6 +37,13 @@
   "glyphs": "https://free.tilehosting.com/fonts/{fontstack}/{range}.pbf?key={key}",
   "layers": [
     {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "rgba(255, 255, 255, 0.3)"
+      }
+    },
+    {
       "id": "station-halo",
       "type": "circle",
       "source": "fuel",
